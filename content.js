@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 // rob is king
+=======
+// fourth comment
+//third comment 
+// Second comment
+///first comment
+// fifth comment
+//best comment made
+//steve sucks 
+>>>>>>> 3b4951959bfb9fe2fbae78e8cdd2cd5195dd120c
 
 chrome.runtime.onMessage.addListener(gotMessage);
 
