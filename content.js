@@ -1,6 +1,8 @@
+// fourth comment
 //third comment 
 // Second comment
 ///first comment
+// fifth comment
 
 chrome.runtime.onMessage.addListener(gotMessage);
 
