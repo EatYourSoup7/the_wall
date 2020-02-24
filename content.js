@@ -4,7 +4,8 @@
 ///first comment
 // fifth comment
 //best comment made
-//steve sucks 
+//steve sucks
+//steve really really sucks
 
 chrome.runtime.onMessage.addListener(gotMessage);
 
