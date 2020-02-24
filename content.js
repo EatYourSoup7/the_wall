@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-// rob is king
-=======
+
 // fourth comment
 //third comment 
 // Second comment
@@ -8,7 +6,11 @@
 // fifth comment
 //best comment made
 //steve sucks 
->>>>>>> 3b4951959bfb9fe2fbae78e8cdd2cd5195dd120c
+//steve sucks
+//steve really really sucks
+//while steve.still_sucks do | research |
+
+
 
 chrome.runtime.onMessage.addListener(gotMessage);
 
