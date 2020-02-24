@@ -1,4 +1,4 @@
-
+// Second comment
 
 chrome.runtime.onMessage.addListener(gotMessage);
 
