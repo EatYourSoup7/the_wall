@@ -5,10 +5,10 @@ function gotMessage(message, sender, sendResponse) {
   if (message.txt === "hello") {
     console.log("What up I'm a Chrome Extension")
 
-    let paragraphs = document.getElementsByTagName('p');
+    var paragraphs = document.getElementsByTagName('p');
     for (elt of paragraphs) {
-
-      elt.style['background-color'] = 'black'
+      elt.innerHTML = message.txt,
+      elt.style['background-color'] = 'black';
     }
   }
 }

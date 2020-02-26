@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Censored Words Options</title></head>
+<body>
+
+What do you want to do:
+<form id="userInput">
+  <ul>
+    <li><input type="text" value="" autofocus ></input></li>
+    <li><input type="text" value=""></input></li>
+    <li><input type="text" value=""></input></li>
+    <li><input type="text" value=""></input></li>
+  </ul>
+</form>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
+
+
+<!-- 1. Need to figure out if js is correctly collecting the values of each input (guess is that it should bc we call on the 'userInput' id)
+2. Are those values being stored into an array?
+3. Each time the settings are opened the values are not currently showing in the input boxes. Is this an error with chrome.storage.sync.get?
+4. How can we auto populate additional input fields to accommodate for more censored words? Have seen this functionality when hitting enter/tab within the last input field.
+5. Why doesn't autofocus work (not priority)  -->
