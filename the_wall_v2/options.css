@@ -1,5 +1,5 @@
 body {
-  background-color: #336699;
+  background-color: #3d3d3d;
   color: white;
 }
 
@@ -28,7 +28,7 @@ button {
   padding: 12px 20px;
   margin: 5px 0;
   box-sizing: border-box;
-  border: 3px black;
+  border: 5px black;
   border-radius: 5px;
   background-color: #00a3cc;
   color: white;
@@ -37,7 +37,11 @@ button {
   font-weight: bold;
 }
 
-button#btn {
+button#add {
   background-color: green;
+}
+
+button#remove {
+  background-color: #8a000e;
 }
 
