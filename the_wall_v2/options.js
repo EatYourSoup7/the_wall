@@ -1,6 +1,7 @@
 (function() {
   var counter = 0;
-  var btn = document.getElementById('btn');
+  var add = document.getElementById('add');
+  var remove = document.getElementById('remove');
   var form = document.getElementById('userInput');
   var addInput = function() {
     counter++;
@@ -9,10 +10,37 @@
     input.value = '';
     form.appendChild(input);
   };
-  btn.addEventListener('click', function() {
+  var removeInput = function() {
+    counter -= 1;
+    var input = document.getElementById('userInput').removeChild(userInput.childNodes[userInput.childNodes.length - 1]);
+  }
+  add.addEventListener('click', function() {
     addInput();
   }.bind(this));
+  remove.addEventListener('click', function() {
+    removeInput();
+  }.bind(this));
 })();
+
+
+
+// var counter = 1;
+// var limit = 10;
+// function addInput(userInput) {
+//   if (counter === limit) {
+//     alert("You have reached the limit");
+//   }
+//   else {
+//     var newInput = document.createElement('input');
+//     newInput.innerHTML = "<input type='text' value=''><input type='button' id='remove' value='X'>";
+//     document.getElementById(userInput).appendChild(newInput); counter++;
+//   }
+
+//   function removeInput(newInput) {
+//     document.getElementById('userInput').removeChild(newInput);
+//     counter -= 1;
+//   }
+// }
 
 function save_options() {
   var userInput = document.getElementById('userInput').value;
@@ -50,5 +78,5 @@ document.getElementById('save').addEventListener('click',
 // 1. Need to figure out if js is correctly storing the collection of values of each input (my guess is that it should bc we call on the 'userInput' id)
 // 2. Are those values being stored into an array?
 // 3. Each time the settings are opened the values are not currently showing in the input boxes. Is this an error with chrome.storage.sync.get? Need to add functionality to allow user to remove previous values as well.
-// 4. How can we auto populate additional input fields to accommodate for more censored words? Have seen this functionality when hitting enter/tab within the last input field.
-// 5. Why doesn't autofocus work (not priority)
+
+// 4. Why doesn't autofocus work (not priority)
