@@ -15,6 +15,10 @@ input {
 
 }
 
+input{
+  display:block;
+}
+
 input:focus {
   border: 4px grey;
 }
@@ -31,5 +35,9 @@ button {
   font-family: Arial, Helvetica;
   font-size: 17px;
   font-weight: bold;
+}
+
+button#btn {
+  background-color: green;
 }
 
