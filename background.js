@@ -3,8 +3,8 @@ console.log('background running');
 chrome.browserAction.onClicked.addListener(buttonClicked)
 
 function buttonClicked(tab) {
-  let msg = {
+  var msg = {
     txt: "what up"
   }
-  chrome.tabs.sendMessage(tab.id, msg);
+  // chrome.tabs.sendMessage(tab.id, msg);
 }

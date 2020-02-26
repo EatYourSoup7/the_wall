@@ -1,0 +1,16 @@
+{
+  "name": "The Wall V2",
+  "version": "2.0",
+  "manifest_version": 2,
+  "description": "settings html and background",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
+
+

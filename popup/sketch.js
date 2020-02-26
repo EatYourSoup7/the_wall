@@ -1,22 +1,22 @@
 function setup() {
   noCanvas();
-  let userinput = select('#userinput');
-  userinput.input(changeText);
+  var userinput = select('#userinput');
+  userinput.changed(changeText);
 
   function changeText() {
 
-    let params = {
+    var params = {
       active = true, 
       currentWindow: true
-    }
+    };
     chrome.tabs.query(params, gotTab); 
 
-    function gotTab(tab) {
-    
-    let message = userinput.value();
+    function gotTabs(tabs) {
+      console.log("got tabs");
+    var message = userinput.value();
 
-    let msg = {
-      txt: "hello"
+    var msg = {
+      txt: userinput.value();
     }
     chrome.tabs.sendMessage(tabs[0].id, msg); 
   }
